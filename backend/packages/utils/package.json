@@ -1,0 +1,19 @@
+{
+  "name": "@project-backend/utils",
+  "version": "0.1.0",
+  "main": "index.ts",
+  "author": {
+    "name": "Jacob Haitsma",
+    "email": "jacobhaitsma@gmail.com"
+  },
+  "license": "MIT",
+  "description": "Utils package for backend",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JacobHaitsma/rapid-prototype-starter.git"
+  },
+  "dependencies": {
+    "cuid": "2.1.8",
+    "winston": "3.3.3"
+  }
+}

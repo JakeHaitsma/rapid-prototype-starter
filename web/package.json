@@ -1,0 +1,68 @@
+{
+  "name": "project-web",
+  "version": "0.1.0",
+  "author": {
+    "name": "Jacob Haitsma",
+    "email": "jacobhaitsma@gmail.com"
+  },
+  "private": true,
+  "license": "MIT",
+  "description": "Node/React/TS/Express/GraphQL/Apollo/Material UI/Cypress Starter",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JacobHaitsma/rapid-prototype-starter.git"
+  },
+  "dependencies": {
+    "@apollo/client": "3.2.3",
+    "@material-ui/core": "4.11.0",
+    "@material-ui/icons": "4.9.1",
+    "@testing-library/jest-dom": "5.11.4",
+    "@testing-library/react": "11.0.4",
+    "@testing-library/user-event": "12.1.7",
+    "@types/jest": "26.0.14",
+    "@types/material-ui": "0.21.8",
+    "@types/node": "14.11.8",
+    "@types/react": "16.9.51",
+    "@types/react-dom": "16.9.8",
+    "@types/react-router": "5.1.8",
+    "@types/react-router-dom": "5.1.6",
+    "graphql": "15.3.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-router": "5.2.0",
+    "react-router-dom": "5.2.0",
+    "react-scripts": "3.4.1",
+    "subscriptions-transport-ws": "0.9.18",
+    "typescript": "4.0.3"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "yarn test:clean && react-app-rewired test --watchAll=false",
+    "test:clean": "yarn jest --passWithNoTests clean",
+    "eject": "react-app-rewired eject"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "@web/(.*)$": "<rootDir>/src/$1"
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "customize-cra": "1.0.0",
+    "customize-cra-react-refresh": "1.1.0",
+    "react-app-rewire-alias": "0.1.6",
+    "react-app-rewired": "2.1.6"
+  }
+}

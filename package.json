@@ -1,0 +1,46 @@
+{
+  "name": "fullstack-starterkit",
+  "version": "0.1.0",
+  "author": {
+    "name": "Jacob Haitsma",
+    "email": "jacobhaitsma@gmail.com"
+  },
+  "private": true,
+  "license": "MIT",
+  "description": "Node/React/TS/Express/GraphQL/Apollo/Material UI/Cypress Starter",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JacobHaitsma/rapid-prototype-starter.git"
+  },
+  "scripts": {
+    "start:web": "cd web && yarn start",
+    "start:backend": "cd backend && yarn start",
+    "build:web": "cd web && yarn build",
+    "build:backend": "cd backend && yarn build",
+    "lint": "yarn eslint --ext .js,.jsx,.ts,.tsx .",
+    "lint:fix": "yarn prettier --write . && yarn lint --fix",
+    "e2e": "yarn cypress open",
+    "postinstall": "cd web && yarn && cd ../backend && yarn && cd .."
+  },
+  "devDependencies": {
+    "@types/jest": "26.0.14",
+    "@typescript-eslint/eslint-plugin": "4.4.0",
+    "@typescript-eslint/parser": "4.4.0",
+    "cypress": "6.0.0",
+    "eslint": "6.6.0",
+    "eslint-import-resolver-alias": "1.1.2",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-prettier": "3.1.4",
+    "eslint-plugin-react": "7.21.4",
+    "husky": "4.3.0",
+    "pm2": "4.5.0",
+    "prettier": "2.1.2",
+    "typescript": "4.0.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint",
+      "pre-push": "yarn lint:fix"
+    }
+  }
+}

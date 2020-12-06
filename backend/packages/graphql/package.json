@@ -1,0 +1,29 @@
+{
+  "name": "@project-backend/graphql",
+  "version": "0.1.0",
+  "main": "index.ts",
+  "author": {
+    "name": "Jacob Haitsma",
+    "email": "jacobhaitsma@gmail.com"
+  },
+  "license": "MIT",
+  "description": "GraphQL package",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JacobHaitsma/rapid-prototype-starter.git"
+  },
+  "scripts": {
+    "generate": "yarn graphql-codegen --config codegen.yml"
+  },
+  "dependencies": {
+    "graphql": "15.4.0",
+    "graphql-tools": "7.0.1"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "1.19.0",
+    "@graphql-codegen/schema-ast": "1.17.8",
+    "@graphql-codegen/typescript": "1.17.11",
+    "@graphql-codegen/typescript-operations": "1.17.8",
+    "@graphql-codegen/typescript-react-apollo": "2.0.7"
+  }
+}
